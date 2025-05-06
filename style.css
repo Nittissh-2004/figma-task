@@ -1,3 +1,670 @@
-body{
+
+/*root colors */
+:root {
+    --dark-color: #fa7436;
+    --black-color: #070917;
+    --white-color:var(--white-color)
+    --light-color: #666666;
+    --grey-color: #444444;
+  }
+  /* base styling */
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
     font-family: "Poppins", sans-serif;
-}
+  }
+  /* base styling ends */
+  .wrapper {
+    width: 1140px;
+    margin: 0 auto;
+   
+  }
+  /* button styling */
+  .btn {
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 6px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+  }
+  
+  .btn.dark{
+    background: var(--dark-color);
+  }
+  .btn.light{
+    background-color: #fff;
+    color: #fa7436;
+    border: 2px solid #fa7436;
+    margin-top:100px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 1134px;
+    padding: 24px 0;
+    z-index: 100;
+    transition: all 500ms ease;
+  }
+  nav .login{
+    display:flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+  
+  }
+  nav .login a{
+    font-weight: normal;
+    font-size: 16px;
+    color: #fa7436;
+    text-decoration: none;
+  }
+  .login .btn.dark{
+    color: #fff;
+  }
+  nav .logo {
+    font-family: "Volkhov", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #000;
+  }
+  nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+  }
+  nav ul li a {
+    font-weight: normal;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  
+  /*hero-section */
+  .hero-section {
+    display: flex;
+    height: 100vh;
+    width: 1170px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    position: relative;
+    color: #000;
+    margin-top: 100px;
+  }
+  
+  .hero-section .left h1 {
+    font-family: "Volkhov", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 100%;
+    margin-bottom: 0;
+    color: #000;
+  }
+  
+  .hero-section .left p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    margin-bottom: 30px;
+    width: 500px;
+    color:  #767474;
+  }
+  
+  .hero-section .left {
+    flex: 1;
+  }
+  .hero-section .right {
+    align-self: flex-end;
+  }
+  /*hero image*/
+  .hero-section .right .hero-image{
+    height: 300px;
+    
+    vertical-align: middle;
+    margin-bottom: 300px;
+    margin-right: 1000px;
+  }
+  /*review*/
+  
+  .review-section{
+    position: absolute;
+    min-width: 200px;
+    margin-right: 50px;
+    line-height: 20%;
+    padding: 20px;
+    margin-top: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  
+  }
+  .review-section .content{
+    border-radius: 12px;
+    background: #fff;
+    padding: 8px 0px;
+    z-index: 10px;
+    position: absolute;
+   
+  
+  }
+  .review-section img{
+    flex: 1;
+    height: 35px;
+    margin-left: -60px;
+    margin-bottom: -60px;
+    position: absolute;
+    
+  }
+  .review-section h4{
+    font-size: medium;
+    font-weight: 600;
+    margin: 0px;
+  
+    
+  }
+  /*explore*/
+  .explore-section{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%); 
+    background: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    max-width: 180px; 
+    max-height: 100;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap; 
+    margin-left: 1100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    
+   
+  }
+  
+  .explore-section img{
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    margin-left: -40px;
+    position: absolute;
+    
+  }
+  .explore-section h4{
+    font-weight: 600;
+    margin: 0px;
+    
+  }
+  .explore-section p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+    white-space: nowrap; 
+    
+  }
+  /*awards*/
+  .awards-section{
+    position: absolute;
+    background: #fff;
+    width: 100px;
+    height: 10px;
+    font-weight: 200px;
+    font-size: medium;
+    margin-top: 100px;
+    margin-left: 30px;
+  }
+  .awards-section .content{
+    border-radius: 24px;
+    background: #fff;
+    padding-top: 8px;
+    position: absolute;
+    
+    z-index: 10px;
+   
+  }
+  .awards-section img{
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    margin-left: -40px;
+    position:absolute;
+    
+  }
+  .awards-section h4{
+    font-weight: 600;
+    padding: 0px;
+    margin: 0px;
+  }
+  /*forms*/
+  .submit-form{
+    line-height: 200%;
+    margin-top: 100px;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-left: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  .details{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+  }
+  .details label{
+    margin-bottom: 5px;
+    flex-direction: column;
+    line-height: 10px;
+  }
+  .submit-form input  {
+    border: none;
+  }
+  .explore{
+    white-space: nowrap;
+  }
+  /*things to do*/
+  
+  
+  
+  .things-to-do{
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    width: 1170px;
+    height: 484px;
+    margin-top: 100px;
+    background: #fff;
+  }
+  .things-to-do img{
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 15px;
+  }
+  .things-to-do h1{
+    justify-content: center;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    padding: 0px;
+    margin-left: 0px;
+  
+    
+  }
+  
+  
+  
+  .things-to-do p{
+    color: #767474;
+    line-height: 6%;
+    width: 600px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  /*feature*/
+  .features{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 250px;
+    
+  }
+  
+  .feature{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 300px;
+    height: 200px;
+    margin: 60px;
+  }
+  .feature img{
+    width: 55px;
+    height: 50px;
+    position:relative;
+   
+  }
+  .feature h3{
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 230px;
+    text-wrap: no-wrap;
+    
+    
+  }
+  .feature p{
+    height: 200px;
+    width: 10;
+    text-align: justify;
+    color: #767474;
+    
+  }
+  .deals-section{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 200px;
+    margin: 60px;
+    margin-top: 300px;
+  
+  }
+  .deals-section img{
+    width: 55px;
+    justify-content: center;
+    margin-left: 50px;
+  }
+  .deals-section h3{
+    font-weight: 600;
+  }
+  .deals-section p{
+    height: 200px;
+    width: 10;
+    text-align: justify;
+    color: #767474;
+  }
+  /*deals*/
+  
+  .content-head{
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .content-head h1{
+  
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    padding: 0px;
+    margin-left: 0px;
+  }
+  .content-head p{
+    line-height: 150%;
+    color: #767474;
+  
+  }
+  .deal-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 1134;
+    margin-top: 100px;
+  
+  }
+  .deal-card{
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding-bottom: 15px;
+    width: 300px;
+    
+  }
+  .deal-card img{
+   object-fit: cover;
+  }
+  
+  .deal-card h3{
+    margin: 10px;
+   font-weight: 600;
+  }
+  .info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+    color: #666;
+    font-size: 0.9em;
+  
+  }
+  .price{
+    font-size: 1.1em;
+    font-weight: bold;
+    font-weight: 500;
+    margin-left: 170px;
+    background: white;
+  
+  }
+  .price del{
+    color: #999;
+    font-weight: 200;
+  }
+  
+  .book-button{
+    position:absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .Slider-btn img{
+    position:relative;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .vacation-plan{
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .vacation-plan .content-head h2{
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    padding: 0px;
+    margin-left: 0px;
+  }
+  .vacation-plan .content-head p{
+  line-height: 150%;
+    color: #767474;
+  }
+  .vacation-plan .content-head img{
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 15px;
+  }
+  .Slider-btn img{
+    margin-left: 1000px;
+  }
+  .plans-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: space-between;
+    height: 100vh;
+    width: 1134;
+    margin-top: 100px;
+  
+  }
+  .plan-card{
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding-bottom: 15px;
+    width: 450px;
+    height: 450px;
+    overflow:hidden;
+    object-fit: cover;
+    
+  }
+  .plan-card img{
+    
+  object-fit: cover;
+  }
+  .prize-place{
+    display: flex;
+    gap: 150px;
+  }
+  .rating-days{
+    display: flex;
+    gap: 130px;
+  }
+  /*review*/
+  .review{
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    margin-bottom: 100px;
+    background-color: #F7F8FC;
+  
+  }
+  .review .content h2{
+  font-weight: 700;
+  font-size: xxx-large;
+  margin: 15px;
+  }
+  .review .content p{
+    font-size: large;
+    color: #767474;
+    margin-bottom: 50px;
+  }
+  .review .review-content {
+    background-color:white;
+    margin: 15px;
+  }
+  .review .right{
+    box-shadow: #fff;
+  }
+  .review .right img{
+    position: absolute;
+  }
+  .review-content p{
+    margin-top: 100px;
+    padding-left: 20px;
+    color: #5e5555;
+  }
+  
+  .review-content h5{
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: large;
+    color: #444444;
+  
+  }
+  .review-content h6{
+    padding-left: 20px;
+    color: #444444;
+    font-weight: 500;
+  }
+  .bg-button{
+    background-color: aliceblue;
+    margin-left: 100px ;
+    padding-left: 30px;
+  
+  
+  }
+  .bg-button h5{
+    font-weight: 700;
+    font-size: large;
+    color: #4444;
+  
+  }
+  .bg-button p{
+    font-size: small;
+    color:#444444;
+  }
+  /*latest*/
+  .blog .content-head{
+    justify-content: center;
+  }
+  .blog .content-head h2{
+  font-size: xxx-large;
+  font-weight: 600;
+  }
+  .blog .pictures{
+    display: flex;
+   gap: 40px;
+  }
+  .blog .pictures p{
+    color: #444444;
+    font-weight: 600;
+  }
+  .blog .pictures h6{
+    font-weight: 400;
+    color: #666;
+  }
+  .wrapper{
+    display: flex;
+    gap: 100px;
+    margin-top: 100px;
+  }
+  .deets{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    gap: 50px;
+    
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+  .logo1{
+    font-size: x-large;
+    font-weight: bold;
+  }
+  
+  .links ul li{
+    display: flex;
+    align-items: center;
+    color: #666;
+   gap: 15px;
+    margin: 0;
+    text-decoration: none;
+   
+  }
+  .links ul li .options{
+    gap: 10px;
+  }
+  
+  .crp{
+    display: flex;
+    gap: 700px;
+    justify-content: center;
+    margin-top: 60px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  @media (max-width:1100px) {
+    .btn{
+       padding: 16px 32px;
+    }
+    .wrapper{
+      padding: 0 100px;
+    }
+    nav{
+      width: 100%;
+      left: 0;
+      right: 0;
+      padding: 36px 100px;
+    }
+  }

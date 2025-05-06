@@ -3,121 +3,455 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>landing page</title>
+    <title>Landing page</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
-      href="https://www.google.com/imgres?q=landing%20page%20favicon&imgurl=https%3A%2F%2Fcdn-icons-png.flaticon.com%2F512%2F8932%2F8932133.png&imgrefurl=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Flanding-page_8932133&docid=r-YFe4uLxKbksM&tbnid=z5g5WA6vz5I2_M&vet=12ahUKEwiyx9fUnLyMAxVup1YBHVN0IAUQM3oECBoQAA..i&w=512&h=512&hcb=2&ved=2ahUKEwiyx9fUnLyMAxVup1YBHVN0IAUQM3oECBoQAA"
+      href="https://e7.pngegg.com/pngimages/710/115/png-clipart-computer-icons-favicon-science-iconfinder-free-science-icon-text-logo.png"
       type="image/x-icon"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .highlight {
+        color: #fa7436; /* Changes the color of the particular word */
+      }
+    </style>
+    
   </head>
   <body>
-    <!--header section start-->
+    <!--header section starts-->
     <header>
       <div class="wrapper">
-        <!--navigation/navbar part-->
         <nav>
-          <div class="logo">Trabook</div>
+          <div class="logo">Trabook <img src="assets/title.svg" alt="title" /></div>
+         
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Destination</a></li>
             <li><a href="#">Tour</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="#" class="btn dark">Login</a></li>
-            <li><a href="#" class="btn dark">Sign up</a></li>
           </ul>
+            <div class="login"><span class="highlight"><li><a href="#">Login</a></li></span>
+            <li><a href="#" class="btn dark">Sign up</a></li></div>
+
+          
         </nav>
-        <!--hero section-->
+        <!--hero-section starts-->
         <div class="hero-section">
           <div class="left">
-            <h1>Get started your<br />exciting journey<br />with us</h1>
+            <h1>
+              Get started your <br />
+              exciting <span class="highlight">journey</span> <br />
+              with us.
+            </h1>
             <p>
-              A Team of experienced tourism professionals will <br />
-              provide you with the best advice and tips for your <br />
-              desire place
+              A Team of experienced tourism professionals will<br>provide you with
+              the best advice and tips for your <br>desire place.
             </p>
             <a href="#" class="btn light">Discover Now</a>
+          
+        
+            <form class="submit-form">
+              <div class="details">
+                <label for="Location">Location <img src="assets/down arrow.svg" alt="" /></label>
+                 <input type="text"
+                  id="Location"
+                  placeholder="Where are you going"
+                />
+              </div>
+               <div class="details">
+                <label for="Date">Date <img src="assets/down arrow.svg" alt="" /> </label>
+                <input type="number" id="Date" placeholder="When will you go" />
+              </div> 
+                
+              <div class="details">
+                <label for="Guest">Guest<img src="assets/down arrow.svg" alt="" /></label>
+                <input type="text" id="Guest" placeholder="Number of guest" />
+                
+              </div>
+
+              <div><label class="explore">
+                <a href="#" class="btn dark">Explore now</a></label>
+              </div>
+            </form>
           </div>
-          <div class="right">
-            <img src="assets/hero image.png" alt="hero image" />
-            <img src="assets/many aeroplane.svg" alt="many aeroplane" />
+        
+        <div class="right">
+          <div class="awards-section">
+            <div class="content">
+              <img src="assets/medal.png" alt="trophy" />
+              <h4>Best Tour Awards</h4>
+            </div>
           </div>
-          <!--achivements-->
-          <div class="achivement-card">
-            <div class="achivement-card best tour awards">
-              <div class="content">
-                <div>
-                  <img src="assets/medal.png" alt="medal icon" />
-                  <p>Best tour awards</p>
-                </div>
-              </div>
+          <div class="explore-section">
+            <div class="content">
+              <img src="assets/google-maps 1.svg" alt="map" />
+              <h4>Explore</h4>
+              <p>Explore every corner of<br> the world with us</p>
             </div>
-            <div class="achivement-card Every cornar of the world with us">
-              <div class="content">
-                <div>
-                  <h3>Explore</h3>
-                  <img src="assets/google-maps 1.svg" alt="google-maps icon" />
-                </div>
-                <p>Every cornar of the world with us</p>
-              </div>
+          </div>
+          <div class="review-section">
+            <div class="content">
+              <img src="assets/star 1.svg" alt="star" />
+              <h4>27K</h4>
+              <p>Customer reviewed</p>
             </div>
-            <div class="achivement-card Customer Reviewed">
-              <div class="content">
-                <div>
-                  <h3>27K</h3>
-                  <img src="assets/star 1.svg" alt="star icon" />
-                </div>
-                <p>Customer Reviewed</p>
-              </div>
-            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="assets/hero image.png"
+              alt="tourist"
+            />
           </div>
         </div>
-        <div class="navbar">
-            <div class="navbar where are you going">
-                <div class="content">
-                    <div>
-                        <h3>Location</h3>
-                        <img src="assets/down arrow.svg" alt="down arrow icon">
-                    </div>
-                    <p>where are you going</p>
-                </div>
-                </div>
-                <div class="navbar when you will go">
-                    <div class="content">
-                        <div>
-                            <h3>Date</h3>
-                            <img src="assets/down arrow.svg" alt="down arrow icon">
-                        </div>
-                        <p>when you will go</p>
-                    </div>
-                    </div>
-                    <div class="navbar number of guest">
-                        <div class="content">
-                            <div>
-                                <h3>Guest</h3>
-                                <img src="assets/down arrow.svg" alt="down arrow icon">
-                            </div>
-                            <p>number of guest</p>
-                        </div>
-                        </div>
-                        <div class="navbar">
-                            <div class="content">
-                                <div>
-                                    <a href="#" class="btn light">Explore Now</a>
-                            </div>
-                            </div>
-
-            </div>
-         </div>
+      </div>
+    </div>
     </header>
-    <!--header section completed-->
+    <!--header completed-->
+    <!--things-to-do section starts-->
+    <div class="wrapper">
+      <section class="things-to-do">
+        <div class="content head">
+          <img src="assets/aeroplane 1.svg" alt="flight" />
+         <h1>Things you need <span class="highlight">to do</span></h1>
+        
+        <p>
+            We ensure that you’ll embark on a perfectly planned,<br> safe vacation
+            at a price you can afford.
+          </p>
+          
+      <div class="features">
+        <div class="feature">
+          <img src="assets/form design.svg" alt="calender" />
+
+            <h3>Sign Up</h3>
+            <p>
+              Completes all the work associated with planning and processing
+            </p>
+         
+        </div>
+        <div class="feature">
+          <img src="assets/wallet.svg" alt="wallet" />
+          
+            <h3>Worth of Money</h3>
+            <p>
+              After successful access then book from exclusive deals & pricing
+            </p>
+          
+        </div>
+        <div class="feature">
+          <img src="assets/map design.svg" alt="location" />
+          
+            <h3>Exciting Travel</h3>
+            <p>Start and explore a wide range of exciting travel experience.</p>
+          
+        </div>
+        </div>
+      </section>
+    </div>
+    <!--to-do-section completed-->
+    <!--places to visit starts-->
+    <div class="wrapper">
+      <section class="places">
+        <div class="content-head">
+          <h1>Exclusive <span class="highlight">deals & discounts</span></h1>
+          <p>
+            Discover our fantastic early booking discounts <br>& start planning your
+            journey.
+          </p>
+        </div>
+        <div class="deal-container">
+        <div class="deal-card">
+          <img src="assets/subway.png" alt="Madrid" />
+            <h3>Madrid</h3>
+            <div class="info">
+            <span class="loc"><img src="assets/location.svg" alt="location" />Spain</span>
+              <span class="star"><img src="assets/star 1.svg" alt="star" />4.8</span>
+            </div>  
+            <p class="price"><del>$950</del> <span class="highlight">$850</span></p>  
+          </div>
+      
+
+        <div class="deal-card">
+          <img src="assets/tower.png" alt="Firenze"/>
+          
+         
+            <h3>Firenze</h3>
+            <div class="info">
+              <span class="loc"> <img src="assets/location.svg" alt="location" />Italy</span>
+              <span class="star"><img src="assets/star 1.svg" alt="star" />4.5</span>
+             
+            </div>
+            <p class="price"><del>$850</del> <span class="highlight">$750</span></p>  
+          </div>
+          <div class="deal-card">
+            <img src="assets/sea.png" alt="Paris"/>
+
+           
+              <h3>Paris</h3>
+              <div class="info">
+                <span class="loc"> <img src="assets/location.svg" alt="location" />France</span>
+                <span class="star"><img src="assets/star 1.svg" alt="star" />4.4</span>
+               
+              </div>
+              <p class="price"><del>$699 </del><span class="highlight">$599</span></p>  
+            </div>
+            <div class="deal-card">
+          <img src="assets/wallpaper.png" alt="London"/>
+         
+         
+            <h3>London</h3>
+            <div class="info">
+              <span class="loc"> <img src="assets/location.svg" alt="location" />UK</span>
+              <span class="star"><img src="assets/star 1.svg" alt="star" />4.8</span>
+             
+            </div>
+            <p class="price"><del>$850</del> <span class="highlight">$850</span></p>  
+          </div>
+          <div class="Slider-btn">
+            <img src="assets/Slider-btn.svg" alt="Slider-btn" />
+          </div>
+      </div>
+      </section>
+    </div>
+    <!--places to visit ends-->
+    <!--vacation plan section starts-->
+    <div class="wrapper">
+      <section class="vacation-plan">
+        <div class="content-head">
+          <img src="assets/tree.svg" alt="tree">
+          <h2>Best <span class="highlight">vacation plan</span></h2>
+          <p>Plan your perfect vacation with our travel agency. Choose<br> among hundreds of all-inclusive offers! 
+
+          </p>
+
+        </div>
+        <div class="Slider-btn">
+          <img src="assets/Slider-btn.svg" alt="Slider-btn">
+        </div>
+        <div class="plans-container">
+        <div class="plan-card">
+          <img src="assets/a boy.png" alt="rome">
+          <div class="prize-place">
+          <h3>Rome,Italy</h3>
+          <p>$5,42k</p>
+          </div>
+          <div class="rating-days">
+            <p><img src="assets/Navigation.svg" alt="navigate">10 Days Trip</p>
+           <p><img src="assets/star 1.svg" alt="star">4.8</p>
+          </div>
+        </div>
+          
+        
+        <div class="plan-card">
+          <img src="assets/sandle.png" alt="london">
+          <div class="prize-place">
+          <h3>London,UK</h3>
+          <p >$2,42k</p>
+          </div>
+          <div class="rating-days">
+            <p><img src="assets/Navigation.svg" alt="navigate">7 Days Trip</p>
+          <p><img src="assets/star 1.svg" alt="star">4.7</p>
+          </div>
+        </div>
+
+        <div class="plan-card">
+          <img src="assets/tree image.png" alt="japan">
+          <div class="prize-place">
+          <h3>Osaka,Japan</h3>
+          <p>$5,42k</h4>
+          </div>
+          
+          <div class="rating-days">
+            <p><img src="assets/Navigation.svg" alt="navigate">10 Days Trip</p>
+            <p><img src="assets/star 1.svg" alt="star">4.8</p>
+          </div>
+        </div>
+      </div>
+
+      </section>
+
+    </div>
+    <!--vacation plan section ends-->
+    <!--review-section-starts-->
+    <div class="wrapper">
+      <section class="review">
+        <div class="left">
+          <div class="content">
+            <h2>What people say <span class="highlight">about us.</span></h2>
+            <p>Our Clients send us bunch of smilies with our services and we love them.
+
+            </p>
+            
+              <img src="assets/Slider-btn.svg" alt="Slider-btn">
+            
+
+          </div>
+          
+
+        </div>
+        <div class="right">
+          <div class="img">
+            <img src="assets/laughing.png" alt="man">
+
+          </div>
+          <div class="review-content">
+             <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”
+
+             </p>
+             <h5>Mike taylor</h5>
+             <h6>Lahore,Pakistan</h6>
+          </div>
+          <div class="bg-button">
+            <h5>Chris Thomas</h5>
+            <p>CEO of Red Button</p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+     <!--review-section-ends-->
+      <!--latest update section starts-->
+      <div class="wrapper">
+        <section class="blog">
+          <div class="content-head">
+            <h2>Get update with <span class="highlight">
+              latest blog</span></h2>
+
+          </div>
+          <div class="pictures">
+            <div>
+            <img src="assets/building.png" alt="picture">
+            <p class="caption">The Amazing Difference a Year of Travelling .
+
+            </p>
+            <h6 class="date">July 27,2021</h6>
+          </div>
+        
+        <div>
+          <img src="assets/island.png" alt="picture">
+          <p class="caption">Travel far enough, you meet yourself.
+
+          </p>
+          <h6 class="date">July 27,2021</h6>
+        </div>
+        <div>
+          <img src="assets/normal place.png" alt="picture">
+          <p class="caption">How to Save Money While Visiting Africa .
+          </p>
+          <h6 class="date">July 27,2021</h6>
+        </div>
+        <div>
+          <img src="assets/stone.png" alt="picture">
+          <p class="caption">Reflections on 5 Months of Travel: Time to Hang
+          </p>
+          <h6 class="date">July 27,2021</h6>
+        </div>
+      </div>
+
+
+
+
+        </section>
+
+      </div>
+      <!--latest update section ends-->
+      <!--subscription section starts-->
+      <div class="wrapper">
+        <section class="subscription">
+          <div class="content">
+            <img src="assets/Subscribe (1).png" alt="subs">
+      </div>
+        </section>
+
+      </div>
+      <!--subscription section ends-->
+      <!--footer starts-->
+      <footer>
+        <div class="wrapper">
+          <div class="logodeets">
+          <div class="logo1">Trabook <img src="assets/title.svg" alt="icon" /></div>
+          
+            <p>Book your trip in minute, get full
+              Control for much longer.</p>
+             
+                  <a href="#">
+                    <img src="assets/facebook.svg" alt="facebook" />
+                  </a>
+                  <a href="#">
+                    <img src="assets/insta.svg" alt="instagram" />
+                  </a>
+                  <a href="#">
+                    <img src="assets/twitter.svg" alt="twitter" />
+                  </a>
+                </div>
+
+
+             
+          
+          <div class="deets">
+           
+          <div class="links">
+           
+            <ul class="options">
+              <h3>Company</h3>
+              <li>About</li>
+              <li>Careers</li>
+              <li>Logistic</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+          <div class="links">
+            
+            <ul class="options">
+              <h3>Contact</h3>
+              <li>Help/FAQ</li>
+              <li>Press</li>
+              <li>Affilates</li>
+             
+            </ul>
+          </div>
+          <div class="links">
+           
+            <ul class="options">
+             <h3>More</h3>
+              <li>Press Centre</a></li>
+              <li>Our Blog</a></li>
+              <li>Low fare tips</a></li>
+             
+            </ul>
+          </div>
+        </div>
+      </div>
+   
+          <br>
+
+          <hr>
+          <div class="crp">
+          <div class="left1">
+            <p>Copyright, Trabook 2022. All rights reserved.</p>
+
+          </div>
+          <div class="right1">
+           Terms & Conditions
+
+          </div>
+        </div>
+
+          
+     
+      </footer>
+      
+
 
   </body>
 </html>
